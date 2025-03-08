@@ -4,7 +4,7 @@
   "main": "index.js",
   "scripts": {
     "build": "tsc",
-    "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
+    "dev": "ts-node-dev --respawn --transpile-only --quiet src/index.ts",
     "test": "jest"
   },
   "keywords": [],
@@ -12,6 +12,7 @@
   "license": "ISC",
   "description": "",
   "devDependencies": {
+    "@jest/fake-timers": "^29.7.0",
     "@types/jest": "^29.5.14",
     "@types/node": "^22.13.9",
     "jest": "^29.7.0",
